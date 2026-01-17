@@ -34,7 +34,7 @@ IDFM API → Kafka (2 brokers) → Spark Structured Streaming → InfluxDB (time
 | worker2  | 10.0.0.104   | Kafka Broker                      |
 | worker3  | 10.0.0.105   | InfluxDB                          |
 | worker4  | 10.0.0.113   | Kafka Broker                      |
-| worker5  | 10.0.0.112   | Spare Node                        |
+| worker5  | 10.0.0.112   | Spark Node                        |
 
 ---
 
