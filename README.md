@@ -41,32 +41,48 @@ IDFM API → Kafka (2 brokers) → Spark Structured Streaming → InfluxDB (time
 ## Cluster Setup Instructions
 
 ### Hadoop & YARN (on master)
+```bash
 start-dfs.sh
 start-yarn.sh
+```
 
 ### Spark (on master)
+```bash
 cd /opt/spark/sbin
 ./start-master.sh --host 10.0.0.116
+```
 
 ### Spark (on each worker)
+```bash
 cd /opt/spark/sbin
 ./start-worker.sh spark://10.0.0.116:7077
+```
 
 ### Kafka + Zookeeper (on worker2 and worker4)
+```bash
 bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 bin/kafka-server-start.sh -daemon config/server.properties
+```
 
 ### InfluxDB (on worker3)
+```bash
 ./influxd &
+```
 
 ### Grafana (on worker1)
+```bash
 ./bin/grafana-server
+```
 
 ### Start Kafka Producer
+```bash
 python3 kafka_producer_idfm.py
+```
 
 ### Start Spark Streaming Job
+```bash
 spark-submit --master spark://10.0.0.116:7077 spark_streaming_idfm_to_influx.py
+```
 
 ---
 
