@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Incident sur la ligne A",
+        "last_update": "2026-01-17T08:15:00",
+        "severity": "HIGH"
+    },
+    {
+        "title": "Retard sur la ligne B",
+        "last_update": "2026-01-17T08:18:00",
+        "severity": "MEDIUM"
+    },
+    {
+        "title": "Travaux programmés ligne C",
+        "last_update": "2026-01-17T08:20:00",
+        "severity": "LOW"
+    },
+    {
+        "title": "Panne de signalisation ligne A",
+        "last_update": "2026-01-17T08:25:00",
+        "severity": "HIGH"
+    },
+    {
+        "title": "Affluence élevée ligne D",
+        "last_update": "2026-01-17T08:30:00",
+        "severity": "MEDIUM"
+    }
+]
